@@ -1,0 +1,59 @@
+  <div class="contenedorcaracteristicas">
+            <div class="acciones">
+                <a href="" class="btn"> <span class="fa fa-plus"></span> AGREGAR CARACTERISTICA</a>  
+            </div>
+            <div class="caracteristicas">
+                
+                <div class="caracteristica">
+                    <div class="detalle">
+                        <textarea name="" id="" cols="2" rows="2"> DETALLE DE LA CARACTERISTICA</textarea>
+                    </div>
+                    <div class="imagencaracteristica">
+                        <img src="" alt="">
+                    </div>
+                    <div class="acciones">
+                        <a href="" class="btn"> <span class="fa fa-save"> AGREGAR </span></a>  
+                        <a href="" class="btn"> <span class="fa fa-trash"> ELIMINAR </span></a> 
+                    </div>
+                    <div class="contenedorsubcaracteristicas">
+                        <div class="acciones">
+                        <a href="" class="btn"> <span class="fa fa-plus"></span> AGREGAR SUBCARACTERISTICA</a>  
+            
+                        </div>
+                        <div class="subcaracteristicas">
+                            <div class="subcaracteristica">
+                                <div class="detalle">
+                                    <textarea name="" id="" cols="2" rows="2"> DETALLE DE LA SUBCARACTERISTICA</textarea>
+                                </div>
+                            
+                                <div class="acciones">
+                                    <a href="" class="btn"> <span class="fa fa-save"> AGREGAR </span></a>  
+                                    <a href="" class="btn"> <span class="fa fa-trash"> ELIMINAR </span></a> 
+                                </div>
+                            </div>
+                            <div class="subcaracteristica">
+                                <div class="detalle">
+                                    <textarea name="" id="" cols="2" rows="2"> DETALLE DE LA SUBCARACTERISTICA</textarea>
+                                </div>
+                            
+                                <div class="acciones">
+                                    <a href="" class="btn"> <span class="fa fa-save"> AGREGAR </span></a>  
+                                    <a href="" class="btn"> <span class="fa fa-trash"> ELIMINAR </span></a> 
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                
+                </div>
+
+        <div class="contenedorcaracteristicas">
+            <div class="acciones">
+                <a href="" class="btn"> <span class="fa fa-plus"></span> AGREGAR CARACTERISTICA</a>  
+            </div>
+            <div class="caracteristicas" id="caracteristicas">
+                
+               
+            </div>
+        </div>

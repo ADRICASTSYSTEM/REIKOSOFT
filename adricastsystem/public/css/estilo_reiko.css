@@ -1,0 +1,2074 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.imgpresentacion{
+    width: 90%;
+    height: 90%;
+}
+
+.contenedorprincipal{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.salir{
+    margin-left: 20px;
+    color: rgb(212, 255, 0);
+}
+.salir:hover{
+    margin-left: 20px;
+    color: yellow;
+}
+.contenedorbusqueda{
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    display: block;
+    padding: 10px;
+    background-color: aliceblue;
+}
+.containerelemento{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: grid;
+    padding: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.contenedorcaracteristicas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.acciones {
+    margin-bottom: 10px;
+}
+.contenedorcaracteristicas .acciones{
+    width: 100%;
+   
+    background-color: transparent;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acciones .btnver{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+.acciones .btnver:hover{
+    background-color: #0056b3;
+}
+.acciones .btneliminar{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.acciones .btneliminar:hover{
+    background-color: #a71d2a;
+}
+.contenedorcaracteristicas .caracteristicas{
+    width: 100%;
+    height: auto;
+ 
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+}
+.caracteristica {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.subcaracteristica {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.detalle textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 5px;
+}
+.imagencaracteristica img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenedorcaracteristicas .caracteristicas .caracteristica{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 140px 1fr 200px;
+    grid-template-rows: 100px 1fr;
+    padding: 5px;
+    border-bottom: 1px solid black;
+  
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .detalle{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .acciones{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .imagencaracteristica{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .contenedorsubcaracteristicas{
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    background-color: transparent;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .contenedorsubcaracteristicas .acciones{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .contenedorsubcaracteristicas .subcaracteristicas{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    grid-column: 1/3;
+    grid-row: 2/3;  
+
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .contenedorsubcaracteristicas .subcaracteristicas .subcaracteristica{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr ;
+    padding: 5px;
+    border-bottom: 1px solid black;
+   
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .contenedorsubcaracteristicas .subcaracteristicas .subcaracteristica .detalle{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorcaracteristicas .caracteristicas .caracteristica .contenedorsubcaracteristicas .subcaracteristicas .subcaracteristica .acciones{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos mejorados para la interfaz */
+/*chats*/
+    .unread-count {
+        background-color: #28a745; /* verde */
+        color: white;
+        border-radius: 50%;
+        padding: 2px 7px;
+        font-size: 12px;
+        font-weight: bold;
+        min-width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.3);
+        user-select: none;
+    }
+.userchatimg {
+    position: relative;
+    display: inline-block;
+}
+
+.userchatimg img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.unread-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.message {
+    position: relative;
+    padding: 10px 40px 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: yellow;
+    margin-left: auto;
+    margin-bottom:30px;
+    
+}
+
+.received {
+    margin-bottom:30px;
+    background-color: #fff;
+    margin-right: auto;
+}
+
+.status {
+    font-size: 0.75rem;
+    color: gray;
+    margin-left: 10px;
+}
+
+.timestamp {
+    display: block;
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.chat-message-options {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    color: #666;
+    user-select: none;
+   
+}
+
+.dropdown-toggle:hover {
+    color: #000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 9999; /* asegura que esté por encima de otros elementos */
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 0;
+    display: none;
+}
+.dropdown-menu.show {
+    display: block;
+}
+
+
+
+.dropdown-item {
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.chat-options {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-options {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  color: #555;
+  font-size: 18px;
+}
+
+.btn-options:hover {
+  background-color: #e0e0e0;
+  color: #111;
+}
+.dropdown-container {
+    position: relative; /* mantiene referencia local */
+}
+.dropdown-menu {
+  position: absolute;
+  top: 120%; /* un poco más abajo del botón */
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  min-width: 180px;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+ 
+  display: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+   z-index: 9999;
+}
+
+.dropdown-menu li {
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.25s ease;
+  color: #333;
+  border-left: 4px solid transparent;
+   padding: 10px 15px;
+    white-space: normal; /* permite que el texto se ajuste dentro */
+    overflow-wrap: break-word; 
+}
+
+
+.dropdown-menu li:hover {
+  background-color: #f5f5f5;
+  color: #d32f2f; /* rojo suave para eliminar */
+  border-left: 4px solid #d32f2f;
+  font-weight: 600;
+}
+
+/* Ícono en el li usando FontAwesome - ejemplo */
+.dropdown-menu li::before {
+  content: "\f2ed"; /* unicode de icono de basura (fa-trash) */
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  margin-right: 8px;
+  color: #d32f2f;
+}
+
+
+.contenedorchat {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: min(45%, 350px) 1fr;
+    grid-template-rows: 60px 60px 1fr 60px;
+    background-color: #fff; /* Cambiar el color de fondo */
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar una suave sombra */
+    border: 1px solid #ddd; /* Cambiar el color del borde */
+}
+
+/* Estilos para el botón "Agregar Chat" */
+.contenedorchat .addchat {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd; /* Agregar un borde inferior */
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+.contenedorchat .searchchat {
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd; /* Agregar un borde inferior */
+    grid-column: 1/2;
+    grid-row: 2/3;
+  
+}
+.contenedorchat .userschat {
+    border-right: 1px solid #ddd; /* Agregar un borde derecho */
+    overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+    grid-column: 1/2;
+    grid-row: 3/4;
+     display: block;
+}
+.contenedorchat .headerchat{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd; /* Agregar un borde inferior */
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+.btn-volver {
+     display: none;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contenedorchat .chatbox {
+     padding: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative; 
+}
+.contenedorchat .addchat button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contenedorchat .addchat button:hover {
+    background-color: #0056b3; /* Cambiar el color al pasar el mouse */
+}
+
+/* Estilos para la barra de búsqueda */
+
+
+.contenedorchat .searchchat input[type="text"] {
+    width: 65%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.contenedorchat .searchchat button {
+    background-color: #007bff;
+    width: 25%;
+    max-width: 50px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius:0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contenedorchat .searchchat button:hover {
+    background-color: #0056b3; /* Cambiar el color al pasar el mouse */
+}
+
+/* Estilos para la lista de usuarios */
+
+.contenedorchat .userschat::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.contenedorchat .userschat::-webkit-scrollbar-thumb{
+    background-color: #232d8d;
+    border-radius: 4px;
+}
+
+.userchat {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-left: 2%;
+    box-shadow: 3px 3px 2px gray;
+    margin-bottom: 2px;
+}
+
+.userchat:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+.userchatimg {
+    margin-right: 10px;
+}
+
+.userchatimg img {
+    width: 50px; /* Ajustar el tamaño de la imagen de perfil */
+    height: 50px;
+    border-radius: 50%; /* Hacer la imagen de perfil redonda */
+}
+
+.userchatinfo {
+    flex-grow: 1;
+}
+
+.userchatinfo p {
+    margin: 5px 0;
+}
+
+.username {
+    font-weight: bold; /* Hacer el nombre del usuario en negrita */
+}
+
+.message-preview {
+    color: #666; /* Cambiar el color del mensaje de vista previa */
+}
+
+
+
+/* Estilos para la ventana de chat */
+
+
+.contenedorchat .chatbox::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.contenedorchat .chatbox::-webkit-scrollbar-thumb{
+    background-color: #232d8d;
+    border-radius: 4px;
+}
+
+
+
+/* Estilos para los mensajes */
+.message {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 70%;
+    position: relative;
+    overflow: visible;
+    box-shadow:2px 2px 2px gray;
+}
+
+.sent {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    min-width: 200px;
+    min-height: 60px;
+    margin-bottom:30px;
+    
+}
+
+.received {
+    background-color: #f0f0f0;
+    color: black;
+    align-self: flex-start;
+    min-width: 200px;
+    min-height: 60px;
+    margin-bottom:30px;
+}
+
+/* Estilos para el visto en los mensajes enviados */
+.sent .status {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.sent .timestamp {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+/* Estilos para la fecha y hora en los mensajes recibidos */
+.received .timestamp {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Estilos para la barra de escritura */
+.contenedorchat .chatwrite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-top: 1px solid #ddd; /* Agregar un borde superior */
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.contenedorchat .chatwrite input[type="text"] {
+    width: calc(100% - 80px); /* Calcula el ancho del input */
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.contenedorchat .chatwrite button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contenedorchat .chatwrite button:hover {
+    background-color: #0056b3; /* Cambiar el color al pasar el mouse */
+}
+
+/**/
+.elemento1{
+    height: auto;
+    background-color: transparent;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px;
+}
+.elemento2{
+    height: auto;
+    background-color: transparent;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 10px;
+
+}
+.elemento3{
+    height: auto;
+    background-color: transparent;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 10px;
+}
+.elemento4{
+    height: auto;
+    background-color: transparent;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding: 10px;
+}
+
+
+.contenedorbusqueda input[type="button"]{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.menulateral{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorsecundario{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reikocontenedor {
+  height: 100vh; /* Usa todo el alto del viewport */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+}
+
+.reikocontenedor #infosystem{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    border-radius: 0;
+    box-shadow: 4px 3px 3px 0px rgba(0,0,0,0.75);
+
+    display: flex;
+    padding: 5px;
+    background: #020024;
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  
+    
+}
+.reikocontenedor #infosystem img{
+    border-radius: 50%;
+    border: 2px solid yellowgreen;
+    margin-right: 10px;
+}
+.reikocontenedor #infosystem p{
+    color: white;
+    font-weight: bold;
+    margin: 2px;
+}
+.reikocontenedor #contenido-principal {
+  display: flex;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  
+  width: 100%;
+height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+/*MENU LATERAL*/
+
+.menu-lateral {
+  width: 60px;
+  background-color: #0d2538;
+  color: white;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.menu-lateral:hover {
+  width: 250px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral li {
+  padding: 2px;
+}
+
+.menu-lateral a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  transition: background-color 0.2s;
+}
+
+.menu-lateral a:hover {
+  background-color: #1d3a52;
+  color: #00d1ff;
+}
+
+.menu-lateral i {
+  min-width: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu-lateral .texto {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu-lateral:hover .texto {
+  opacity: 1;
+}
+
+#contenedorprincipal {
+  width: 100%;
+height: 100%;
+  padding: 20px;
+  overflow: auto;
+ 
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+/*CONTENEDOR*/
+
+.reikocontenedor #contenedormodulos{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: 4px 3px 3px 0px rgba(0,0,0,0.75);
+    background-color: rgb(38, 10, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.reikocontenedor #contenedormodulos #modulos{
+    border: 1px black;
+    box-shadow: 2px 2px 1px gray;
+    width: 90%;
+    background-color: transparent;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.479);
+    padding: 4px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  
+
+}
+.reikocontenedor #contenedormodulos #modulos .modulo{
+    border-radius: 50%;
+   
+}
+.reikocontenedor #contenedormodulos #modulos img{
+    border:2px solid black; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border:2px solid darkblue; 
+  
+}
+.reikocontenedor #contenedormodulos #modulos img:hover{
+
+    width: 40px;
+    height: 40px;
+    border:2px solid yellowgreen; 
+   
+
+}
+.reikocontenedor #piepagina{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: 4px 3px 3px 0px rgba(0,0,0,0.75);
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    
+
+}
+.nextbuttonmenu,
+.prevbuttonmenu {
+    background-color: rgba(0, 0, 255, 0.304);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.463);
+}
+.nextbuttonmenu:hover,
+.prevbuttonmenu:hover {
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+  
+}
+.containerreiko{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.containerreiko {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Estilos para navegadores basados en WebKit (Chrome, Safari) */
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: #00bfff #e0f7ff; /* Para Firefox: thumb y track */
+}
+
+/* Estilos específicos para WebKit */
+.containerreiko::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.containerreiko::-webkit-scrollbar-track {
+  background: #e0f7ff; /* Color del track (fondo de la barra) */
+}
+
+.containerreiko::-webkit-scrollbar-thumb {
+  background-color: #00bfff; /* Color del thumb (parte que se mueve) */
+  border-radius: 4px;
+  border: 2px solid #e0f7ff; /* Espacio alrededor del thumb */
+}
+.containerreiko2{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+   
+
+}
+
+.contenedormodulos{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+.contenedormensajeria {
+    width: 90%;
+    max-width: 800px; /* Limita el ancho máximo para que no se vea demasiado amplio en pantallas grandes */
+    margin: 20px auto; /* Centra el contenedor horizontalmente y agrega margen en la parte superior e inferior */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hace que el contenedor tenga una sombra sutil */
+    background-color: #fff;
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Agrega margen inferior entre los mensajes */
+    padding: 10px;
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje .elemento {
+    flex: 1; /* Hace que los elementos ocupen todo el espacio disponible horizontalmente */
+    margin: 0 10px; /* Agrega espaciado entre los elementos */
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje .elemento input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje .elemento .btnver,.btnver,
+.contenedormensajeria .contenidomensajeria .mensaje .elemento .btneliminar {
+    width: 100px; /* Establece un ancho fijo para los botones */
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Agrega una transición suave */
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje .elemento .btnver, .btnver {
+    background-color: #007bff; /* Azul */
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje .elemento .btneliminar, .btneliminar {
+    background-color: #dc3545; /* Rojo */
+}
+
+.contenedormensajeria .contenidomensajeria .mensaje .elemento .btnver:hover, .btnver:hover,
+.contenedormensajeria .contenidomensajeria .mensaje .elemento .btneliminar:hover, .btneliminar:hover {
+    background-color: #0056b3; /* Cambia el color al tono más oscuro de azul en hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil en hover */
+}
+/* Estilo de los elementos .target */
+/* Estilo para contenedor de cada elemento .target */
+/* Estilo para contenedor de cada elemento .target */
+.modulo-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 220px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px 15px 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modulo-contenedor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.dropdown {
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+.menu-button {
+    background: #ffffffcc;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+.menu-button:hover {
+    background-color: #e0e0e0cc;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 130px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    z-index: 10;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.dropdown-content button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.15s ease;
+}
+
+.dropdown-content button:hover {
+    background-color: #f5f5f5;
+}
+
+.target {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 18px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.target:hover {
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.target a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.target img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.target:hover img {
+    transform: scale(1.05);
+}
+
+.target p {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #222;
+    user-select: none;
+}
+
+.checkbox-container {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4A90E2; /* Color moderno para checkbox */
+    border-radius: 4px;
+    transition: box-shadow 0.15s ease;
+}
+
+.checkbox-container input[type="checkbox"]:hover {
+    box-shadow: 0 0 5px #4A90E2aa;
+}
+
+/**/
+
+.contenedorformularios{
+    width: auto;
+    height:auto;
+    max-width: 90%;
+    max-height: 90%;
+    
+}
+
+#contrasena{
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+#contrasena:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contenedorformularios form{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px gray;
+    border-radius: 5px;
+    padding: 30px;
+}
+.input-text{
+    border: 2px solid #052a06;
+    background-color: #dcedf990;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #45a049;
+}
+.contenedorformularios form img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid yellowgreen;
+}
+.contenedorformularios form input:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="file"]){
+    width: 100%;
+    height: 40px;	
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 9px;
+}
+.botones{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0; 
+}
+.botones button, .btnreiko{
+   padding: 3px;
+   border-radius: 4px;
+   border: 2px solid black;
+   margin-left: 5px;
+}
+
+/**/
+/* Estilo general para cada ruta */
+.ruta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* Contenedor de la información de la ruta */
+.ruta-info {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Colores para los métodos HTTP */
+.metodo-get {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.metodo-post {
+    color: #004085;
+    background-color: #cce5ff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.metodo-put {
+    color: #856404;
+    background-color: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.metodo-delete {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown > button {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown content on button hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change button background on hover */
+.dropdown > button:hover {
+    background-color: #0056b3;
+}
+
+/**/
+/* ----- */
+/* MODAL */
+/* ----- */
+
+.reikomodal ,.reikomodal2{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    background-color: rgba(128, 128, 128, 0.541);
+  
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+    overflow: auto;
+    display: none;
+}
+
+
+.reikomodal::-webkit-scrollbar-thumb,.reikomodal2::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 2px;
+}
+.reikomodal::-webkit-scrollbar,.reikomodal2::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.reikomodal .contenidomodal,.reikomodal2 .contenidomodal{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    
+    max-height: auto;
+    padding: 15px;
+    background-color: white;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: 50px 1fr;
+    background-color:white;
+    border-radius:5px;
+    border: 2px solid gray;
+}
+
+
+.reikomodal .contenidomodal .bannertitulo,.reikomodal2 .contenidomodal .bannertitulo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    
+    border-radius:5px;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.reikomodal .contenidomodal .cuerpomodal,.reikomodal2 .contenidomodal .cuerpomodal{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.reikomodal .contenidomodal .cuerpomodal::-webkit-scrollbar-thumb,.reikomodal2 .contenidomodal .cuerpomodal::-webkit-scrollbar-thumb{
+    background-color: #0C134F;
+    border-radius: 4px;
+}   
+.reikomodal .contenidomodal .cuerpomodal::-webkit-scrollbar,.reikomodal2 .contenidomodal .cuerpomodal::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.reikomodal .contenidomodal .closemodal, .reikomodal2 .contenidomodal .closemodal{
+   
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.closemodal button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+.closemodal button:hover {
+    Color:darkblue;
+    
+}
+ 
+.reikomodal .contenidomodal .closemodal a,.reikomodal2 .contenidomodal .closemodal a{
+    background-color: transparent;
+    border: none;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: black;
+}
+
+.reikomodal .contenidomodal .closemodal a:hover,.reikomodal2 .contenidomodal .closemodal a:hover{
+    cursor: pointer;
+    background-color: turquoise;
+}/* Oculta los números de página y otros elementos */
+
+
+/* TABLAS */
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    background-color: #f9f9f9;
+}
+
+
+/* Tabla */
+.tabla img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.tabla img:hover {
+    transform: scale(1.05);
+}
+
+.tabla-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabla thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.tabla th, .tabla td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #f4f6f9; /* fila alternada */
+}
+
+.tabla tbody tr:hover {
+    background-color: #e3eaf2;
+}
+
+/* Botones */
+.btn-accion {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-accion.eliminar {
+    background-color: #e74c3c;
+}
+
+.btn-accion.eliminar:hover {
+    background-color: #c0392b;
+}
+
+.btn-accion.editar {
+    background-color: #3498db;
+}
+
+.btn-accion.editar:hover {
+    background-color: #2980b9;
+}
+
+.btn-eliminar-seleccionados {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.btn-nuevo {
+    display: inline-flex;
+    align-items: center;
+    background-color: #220c63;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-nuevo:hover {
+    background-color: #1a084f;
+}
+
+/* Búsqueda */
+.busqueda-box {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px 0;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.busqueda-input {
+    width: 100%;
+    padding: 10px 12px 10px 36px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.busqueda-input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52,152,219,0.4);
+}
+
+/* Paginación */
+.paginacion {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ROLES */
+
+.containerreiko form {
+  
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerreiko label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.roles-select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background-color: #f9faff;
+  transition: border-color 0.3s ease;
+}
+
+.roles-select:focus {
+  border-color: #00bfff;
+  outline: none;
+  background-color: #e0f7ff;
+}
+
+.dual-select-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.select-box {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.select-box h4 {
+  margin-bottom: 0.5rem;
+  color: #0077cc;
+  font-weight: 700;
+  border-bottom: 2px solid #00bfff;
+  padding-bottom: 3px;
+}
+
+.transfer-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.transfer-buttons button {
+  background-color: #00bfff;
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transfer-buttons button:hover {
+  background-color: #0077cc;
+}
+
+.submit-btn-container {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.submit-btn-container button {
+  background-color: #00bfff;
+  border: none;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn-container button:hover {
+  background-color: #0077cc;
+}
+
+/* Scrollbar personalizado para los selects con overflow */
+
+select[multiple] {
+  scrollbar-width: thin;
+  scrollbar-color: #00bfff #e0f7ff;
+}
+
+select[multiple]::-webkit-scrollbar {
+  width: 8px;
+}
+
+select[multiple]::-webkit-scrollbar-track {
+  background: #e0f7ff;
+  border-radius: 6px;
+}
+
+select[multiple]::-webkit-scrollbar-thumb {
+  background-color: #00bfff;
+  border-radius: 6px;
+}
+/**/
+/* Estilos para la paginación */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paginacion .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paginacion .pagination li {
+    margin: 0 5px;
+}
+
+.paginacion .pagination li a {
+    display: block;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.paginacion .pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.paginacion .pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.paginacion .pagination li.disabled a {
+    background-color: #e0e0e0;
+    color: #ccc;
+    pointer-events: none;
+}
+
+.paginacion select {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.paginacion label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+    align-self: center;
+}
+/* CONTAINER RESTRICCION */
+.restriccion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.restriccion-col {
+    flex: 1 1 100%;
+}
+.selected {
+    background-color: #cdeffd !important;
+    font-weight: bold;
+}
+
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.busqueda-box {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.busqueda-input {
+    width: 100%;
+    padding: 8px 30px 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #aaa;
+}
+/* CONTAINER */
+
+/**/
+@media screen and (max-width: 767px) {
+    /* CONTAINER RESTRICCION*/
+  .restriccion-col {
+        flex: 1 1 48%;
+    }
+    /**/
+   .botones{
+    opacity: 1;
+   } 
+   .reikocontenedor #contenedormodulos #modulos{
+    width: 100%;
+   }
+   /*TABLAS*/
+     .tabla th, .tabla td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn-nuevo, .btn-eliminar-seleccionados {
+        width: 100%;
+        text-align: center;
+    }
+
+    .busqueda-box {
+        width: 100%;
+    }
+
+    .tabla-container {
+        overflow-x: auto;
+    }
+
+   /*chats */
+     /* Por defecto en móvil: mostrar userschat y ocultar chatbox */
+  
+     
+    /* Contenedor general */
+    .contenedorchat {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 60px 60px 1fr 60px !important;
+    }
+
+    /* Chats list */
+    .userschat,
+    .searchchat,
+    .addchat {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        display: block;
+    }
+
+    /* Chatbox oculto inicialmente */
+    .contenedorchat .chatbox{
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        display: none;
+        
+    }
+    .contenedorchat .headerchat{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: none;
+    }
+    .contenedorchat .chatwrite{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        display: none;
+    }
+    /* Cuando chat está activo */
+    .contenedorchat.chat-activo .userschat,
+    .contenedorchat.chat-activo .searchchat,
+    .contenedorchat.chat-activo .addchat {
+        display: none;
+    }
+
+    .contenedorchat.chat-activo .chatbox,  
+    .contenedorchat.chat-activo .chatwrite,
+    .contenedorchat.chat-activo .headerchat{
+        display: flex;
+    }
+   
+
+
+    .btn-volver {
+        display: inline-block;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+/*ROLES*/
+
+
+    .dual-select-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .select-box {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .transfer-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin: 15px 0;
+    }
+
+    .transfer-buttons button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    
+}

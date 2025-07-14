@@ -1,0 +1,168 @@
+/* contenedores principales */
+.main{
+    width: 100%;
+    height: 100%;
+   
+}
+#cuerpo::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(113, 201, 252);
+
+}
+#cuerpo::-webkit-scrollbar-thumb{
+    
+    background-color: rgb(30, 95, 133);
+
+}
+.contenido {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+}
+.contenido .imagen, .contenido .imagen2 {
+    background-color: transparent;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+  
+
+}
+
+.contenido .imagen img {
+    width: 200px;
+    height: 200px;
+}
+.contenido .imagen2 img {
+    width: 70%;
+    max-height: 300px;
+    box-shadow: 3px 4px 4px #21053b;
+    border: 1px solid white; /* Sombra para los títulos */
+    padding: 2x;
+}
+
+/* Estilos para la sección "titulo" */
+.titulo {
+    background-color: #0f0535;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Estilos para las secciones */
+.seccion {
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative; /* Posición relativa para los títulos h2 */
+    box-shadow: 6px 6px  #21053b; /* Sombra para las secciones */
+}
+.seccion p, .seccion li{
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: justify;
+    text-justify: inter-cluster;
+}
+.seccion h2 {
+    font-size: 1.5em;
+    background-color: rgb(14, 200, 247);
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px; /* Padding pequeño en el fondo */
+    margin-top: 30px; /* Margen superior */
+    box-shadow: 3px 4px 2px #21053b;
+    border: 1px solid white; /* Sombra para los títulos */
+    transition: background-color 0.3s ease-in; /* Transición para el efecto de aparición */
+    display: inline; /* Para que el fondo cubra solo el contenido del texto */
+   
+}
+
+p {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+/* Efecto de aparición al desplazarse hacia abajo */
+h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    padding: 10px; /* Padding pequeño en el fondo */
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    z-index: -1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.seccion:hover h2::before {
+    opacity: 1;
+}
+
+/* Estilos para la formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #0f0535;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Resto de tu CSS... */
+
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+}
+
